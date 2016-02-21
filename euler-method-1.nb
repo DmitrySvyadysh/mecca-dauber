@@ -1,0 +1,144 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4218,        135]
+NotebookOptionsPosition[      3719,        113]
+NotebookOutlinePosition[      4066,        128]
+CellTagsIndexPosition[      4023,        125]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"intervalT", " ", ":=", " ", 
+  RowBox[{"Interval", "[", 
+   RowBox[{"0", ",", "10"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.6563300408213124`*^9, 3.656330069510106*^9}, {
+  3.6563301091989326`*^9, 3.6563301412727947`*^9}, {3.656330178715242*^9, 
+  3.6563302298370748`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["DU"], "Input",
+ CellChangeTimes->{{3.6563301559993896`*^9, 3.6563301562645965`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "1", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "}"}], ".", 
+    RowBox[{"u", "[", "t", "]"}]}], "+", 
+   RowBox[{
+    SuperscriptBox["u", "\[Prime]",
+     MultilineFunction->None], "[", "t", "]"}]}], "\[Equal]", "0"}]], "Output",
+ CellChangeTimes->{3.6563301567637653`*^9, 3.656330220492506*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NDSolve", "[", 
+  RowBox[{"DU", ",", 
+   RowBox[{"u", "[", "t", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", "1"}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Method", "\[Rule]", "\"\<ExplicitEuler\>\""}], ",", " ", 
+   RowBox[{"\"\<StartingStepSize\>\"", "\[Rule]", "intervalT"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.656330021492736*^9, 3.6563300249560127`*^9}, {
+  3.656330149665786*^9, 3.6563301512258034`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NDSolve", "::", "ndsss"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Value of StartingStepSize -> \
+\[NoBreak]\\!\\(Interval[\\(\\(\\(\\({\\(\\(-2.2250738585072014`*^-308\\)\\), \
+2.2250738585072014`*^-308}\\)\\), \\(\\({9.999999999999998`, \
+10.000000000000002`}\\)\\)\\)\\)]\\)\[NoBreak] is not a positive real number \
+or Automatic. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NDSolve/ndsss\\\", ButtonNote -> \
+\\\"NDSolve::ndsss\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.656330166422305*^9}],
+
+Cell[BoxData[
+ RowBox[{"NDSolve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"1", ",", "0", ",", "0"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1", ",", "0"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "}"}], ".", 
+      RowBox[{"u", "[", "t", "]"}]}], "+", 
+     RowBox[{
+      SuperscriptBox["u", "\[Prime]",
+       MultilineFunction->None], "[", "t", "]"}]}], "\[Equal]", "0"}], ",", 
+   RowBox[{"u", "[", "t", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"Method", "\[Rule]", "\<\"ExplicitEuler\"\>"}], ",", 
+   RowBox[{"\<\"StartingStepSize\"\>", "\[Rule]", 
+    RowBox[{"Interval", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"10", ",", "10"}], "}"}]}], "]"}]}]}], "]"}]], "Output",
+ CellChangeTimes->{3.656330166422305*^9}]
+}, Open  ]]
+},
+WindowSize->{767, 601},
+WindowMargins->{{Automatic, 266}, {-7, Automatic}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 300, 6, 31, "Input"],
+Cell[CellGroupData[{
+Cell[883, 30, 98, 1, 31, "Input"],
+Cell[984, 33, 548, 16, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1569, 54, 468, 10, 52, "Input"],
+Cell[2040, 66, 649, 13, 47, "Message"],
+Cell[2692, 81, 1011, 29, 52, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
