@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      2249,         64]
-NotebookOptionsPosition[      2004,         51]
-NotebookOutlinePosition[      2351,         66]
-CellTagsIndexPosition[      2308,         63]
+NotebookDataLength[      2475,         67]
+NotebookOptionsPosition[      2231,         54]
+NotebookOutlinePosition[      2578,         69]
+CellTagsIndexPosition[      2535,         66]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -25,7 +25,7 @@ Cell[BoxData[
   " ", ":=", " ", 
   RowBox[{"If", "[", " ", 
    RowBox[{
-    RowBox[{"t", " ", "==", " ", "t0"}], "\[IndentingNewLine]", ",", "u0", 
+    RowBox[{"t", " ", "<", " ", "t0"}], "\[IndentingNewLine]", ",", "u0", 
     "\[IndentingNewLine]", ",", " ", 
     RowBox[{
      RowBox[{"yEuler", "[", 
@@ -47,7 +47,10 @@ Cell[BoxData[
    3.6659466451914797`*^9}, {3.6659473150874286`*^9, 3.665947341820777*^9}, {
    3.6659482598403206`*^9, 3.6659482670692267`*^9}, {3.6671552598991947`*^9, 
    3.6671553225050063`*^9}, {3.6671554096008744`*^9, 3.667155457938905*^9}, {
-   3.6671559960376825`*^9, 3.667156009105314*^9}, 3.667156249620327*^9}]
+   3.6671559960376825`*^9, 3.667156009105314*^9}, 3.667156249620327*^9, {
+   3.6672032700154295`*^9, 3.667203292198813*^9}, {3.667751597006107*^9, 
+   3.667751616783577*^9}, {3.6677517054766693`*^9, 3.6677517081539783`*^9}, {
+   3.667751754205721*^9, 3.6677517544247484`*^9}, 3.6677601879609036`*^9}]
 },
 WindowSize->{762, 601},
 WindowMargins->{{241, Automatic}, {21, Automatic}},
@@ -65,7 +68,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 1442, 29, 125, "Input"]
+Cell[558, 20, 1669, 32, 92, "Input"]
 }
 ]
 *)
