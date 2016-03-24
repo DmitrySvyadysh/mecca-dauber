@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      2475,         67]
-NotebookOptionsPosition[      2231,         54]
-NotebookOutlinePosition[      2578,         69]
-CellTagsIndexPosition[      2535,         66]
+NotebookDataLength[      2743,         71]
+NotebookOptionsPosition[      2501,         58]
+NotebookOutlinePosition[      2846,         73]
+CellTagsIndexPosition[      2803,         70]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -23,9 +23,9 @@ Cell[BoxData[
   RowBox[{"yEuler", "[", 
    RowBox[{"t_", ",", "\[Tau]_", ",", "t0_", ",", "u0_", ",", "A_"}], "]"}], 
   " ", ":=", " ", 
-  RowBox[{"If", "[", " ", 
+  RowBox[{"If", "[", 
    RowBox[{
-    RowBox[{"t", " ", "<", " ", "t0"}], "\[IndentingNewLine]", ",", "u0", 
+    RowBox[{"t", " ", "<=", " ", "t0"}], "\[IndentingNewLine]", ",", "u0", 
     "\[IndentingNewLine]", ",", " ", 
     RowBox[{
      RowBox[{"yEuler", "[", 
@@ -50,10 +50,14 @@ Cell[BoxData[
    3.6671559960376825`*^9, 3.667156009105314*^9}, 3.667156249620327*^9, {
    3.6672032700154295`*^9, 3.667203292198813*^9}, {3.667751597006107*^9, 
    3.667751616783577*^9}, {3.6677517054766693`*^9, 3.6677517081539783`*^9}, {
-   3.667751754205721*^9, 3.6677517544247484`*^9}, 3.6677601879609036`*^9}]
+   3.667751754205721*^9, 3.6677517544247484`*^9}, 3.6677601879609036`*^9, 
+   3.6677955897374973`*^9, {3.66779629088698*^9, 3.667796378631927*^9}, {
+   3.6677964210602336`*^9, 3.66779645083694*^9}, {3.667796481723789*^9, 
+   3.667796502213381*^9}, {3.6677966082905836`*^9, 3.6677966221793175`*^9}, {
+   3.6677966692041855`*^9, 3.6677966749559*^9}}]
 },
-WindowSize->{762, 601},
-WindowMargins->{{241, Automatic}, {21, Automatic}},
+WindowSize->{762, 176},
+WindowMargins->{{Automatic, 46}, {3, Automatic}},
 FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
 StyleDefinitions->"Default.nb"
 ]
@@ -68,7 +72,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 1669, 32, 92, "Input"]
+Cell[558, 20, 1939, 36, 92, "Input"]
 }
 ]
 *)
