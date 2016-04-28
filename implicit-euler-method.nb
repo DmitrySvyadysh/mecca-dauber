@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      2395,         70]
-NotebookOptionsPosition[      2117,         56]
-NotebookOutlinePosition[      2461,         71]
-CellTagsIndexPosition[      2418,         68]
+NotebookDataLength[      2820,         82]
+NotebookOptionsPosition[      2467,         66]
+NotebookOutlinePosition[      2813,         81]
+CellTagsIndexPosition[      2770,         78]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -52,10 +52,20 @@ Cell[BoxData[
    3.666546300345377*^9, 3.666546356928629*^9}, {3.6665464641812954`*^9, 
    3.666546481754489*^9}, {3.6671555060829144`*^9, 3.667155562527956*^9}, {
    3.6671560251343136`*^9, 3.6671560454528503`*^9}, {3.6677517222677383`*^9, 
-   3.6677517235628977`*^9}, 3.6677517627027817`*^9}]
+   3.6677517235628977`*^9}, 3.6677517627027817`*^9}],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.6707918444492235`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"yImplicitEulerStatistics", "[", "ans_", "]"}], " ", ":=", " ", 
+  RowBox[{"{", 
+   RowBox[{"\"\<yImplicitEuler\>\"", ",", " ", "ans"}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.670791852548253*^9, 3.670791887975748*^9}}]
 },
-WindowSize->{783, 561},
-WindowMargins->{{Automatic, 7}, {7, Automatic}},
+WindowSize->{783, 426},
+WindowMargins->{{Automatic, 7}, {Automatic, 101}},
 FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
 StyleDefinitions->"Default.nb"
 ]
@@ -71,7 +81,9 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 272, 5, 31, "Input"],
-Cell[833, 27, 1280, 27, 152, "Input"]
+Cell[833, 27, 1280, 27, 152, "Input"],
+Cell[2116, 56, 89, 1, 52, "Input"],
+Cell[2208, 59, 255, 5, 31, "Input"]
 }
 ]
 *)

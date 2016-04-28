@@ -10,40 +10,49 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      1654,         57]
-NotebookOptionsPosition[      1411,         44]
-NotebookOutlinePosition[      1758,         59]
-CellTagsIndexPosition[      1715,         56]
+NotebookDataLength[      2068,         67]
+NotebookOptionsPosition[      1787,         53]
+NotebookOutlinePosition[      2134,         68]
+CellTagsIndexPosition[      2091,         65]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[
  RowBox[{
-  RowBox[{"yREuler", "[", 
-   RowBox[{
-   "t_", ",", "\[Tau]_", ",", "t0_", ",", "u0_", ",", "A_", ",", "R_"}], 
-   "]"}], " ", ":=", " ", 
-  RowBox[{"If", "[", 
-   RowBox[{
-    RowBox[{"t", " ", "<=", " ", "t0"}], "\[IndentingNewLine]", ",", "u0", 
-    "\[IndentingNewLine]", ",", " ", 
+  RowBox[{
+   RowBox[{"yREuler", "[", 
     RowBox[{
-     RowBox[{"yREuler", "[", 
-      RowBox[{
-       RowBox[{"t", "-", "\[Tau]"}], ",", "\[Tau]", ",", "t0", ",", "u0", ",",
-        "A", ",", "R"}], "]"}], " ", "-", " ", 
-     RowBox[{"\[Tau]", "  ", "R", " ", 
-      RowBox[{"A", ".", 
-       RowBox[{"yREuler", "[", 
-        RowBox[{
-         RowBox[{"t", "-", "\[Tau]"}], ",", "\[Tau]", ",", "t0", ",", "u0", 
-         ",", "A", ",", "R"}], "]"}]}]}]}]}], "\[IndentingNewLine]", 
-   "]"}]}]], "Input",
- CellChangeTimes->{{3.6690157556581316`*^9, 3.6690157796667027`*^9}}]
+    "t_", ",", "\[Tau]_", ",", "t0_", ",", "u0_", ",", "A_", ",", "R_"}], 
+    "]"}], " ", ":=", " ", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{"t", " ", "<=", " ", "t0"}], "\[IndentingNewLine]", ",", "u0", 
+     "\[IndentingNewLine]", ",", " ", 
+     RowBox[{
+      RowBox[{"yREuler", "[", 
+       RowBox[{
+        RowBox[{"t", "-", "\[Tau]"}], ",", "\[Tau]", ",", "t0", ",", "u0", 
+        ",", "A", ",", "R"}], "]"}], " ", "-", " ", 
+      RowBox[{"\[Tau]", "  ", "R", " ", 
+       RowBox[{"A", ".", 
+        RowBox[{"yREuler", "[", 
+         RowBox[{
+          RowBox[{"t", "-", "\[Tau]"}], ",", "\[Tau]", ",", "t0", ",", "u0", 
+          ",", "A", ",", "R"}], "]"}]}]}]}]}], "\[IndentingNewLine]", "]"}]}],
+   "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.6690157556581316`*^9, 3.6690157796667027`*^9}, {
+  3.6707924937896457`*^9, 3.670792493954696*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"yREulerStatistics", "[", "ans_", "]"}], " ", ":=", " ", 
+  RowBox[{"{", 
+   RowBox[{"\"\<yREuler\>\"", ",", " ", "ans"}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.6707925033488607`*^9, 3.6707925438610015`*^9}}]
 },
-WindowSize->{783, 561},
-WindowMargins->{{Automatic, 134}, {18, Automatic}},
+WindowSize->{783, 292},
+WindowMargins->{{Automatic, 134}, {Automatic, 90}},
 FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
 StyleDefinitions->"Default.nb"
 ]
@@ -58,7 +67,8 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 849, 22, 92, "Input"]
+Cell[558, 20, 977, 24, 132, "Input"],
+Cell[1538, 46, 245, 5, 31, "Input"]
 }
 ]
 *)

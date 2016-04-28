@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      7335,        178]
-NotebookOptionsPosition[      6934,        161]
-NotebookOutlinePosition[      7280,        176]
-CellTagsIndexPosition[      7237,        173]
+NotebookDataLength[      7884,        193]
+NotebookOptionsPosition[      7407,        174]
+NotebookOutlinePosition[      7753,        189]
+CellTagsIndexPosition[      7710,        186]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -157,7 +157,20 @@ Cell[BoxData[
    3.667797243134802*^9, 3.667797296054396*^9}, {3.6677973980051193`*^9, 
    3.667797414087123*^9}, 3.6677974679648457`*^9, {3.667797513001465*^9, 
    3.667797537796559*^9}, {3.667797686211134*^9, 3.6677977438482823`*^9}, 
-   3.6677977750921702`*^9, {3.6677979274271774`*^9, 3.6677979504330463`*^9}}]
+   3.6677977750921702`*^9, {3.6677979274271774`*^9, 3.6677979504330463`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.670792109742899*^9, 3.6707921098759155`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"stepValStatistics", "[", 
+   RowBox[{"name_", ",", " ", "ans_"}], "]"}], "  ", ":=", " ", 
+  RowBox[{"{", 
+   RowBox[{"name", ",", " ", "ans"}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.6707921422810326`*^9, 3.6707921572249284`*^9}, {
+  3.6707921950137234`*^9, 3.670792203252767*^9}}]
 },
 WindowSize->{1350, 685},
 WindowMargins->{{-2, Automatic}, {Automatic, 0}},
@@ -179,7 +192,9 @@ Cell[558, 20, 652, 18, 44, "Input"],
 Cell[1213, 40, 2688, 51, 192, "Input"],
 Cell[3904, 93, 205, 5, 31, "Input"],
 Cell[4112, 100, 1108, 24, 185, "Input"],
-Cell[5223, 126, 1707, 33, 132, "Input"]
+Cell[5223, 126, 1707, 33, 132, "Input"],
+Cell[6933, 161, 148, 2, 72, "Input"],
+Cell[7084, 165, 319, 7, 31, "Input"]
 }
 ]
 *)
