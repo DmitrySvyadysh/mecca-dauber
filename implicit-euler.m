@@ -14,7 +14,13 @@ EM + \[Tau] A
 )]
 ]
 
-yImplicitEulerStatistics[ans_] := {"yImplicitEuler", ans}
+yImplicitEulerStatistics[t_, \[Tau]_, t0_, u0_, A_, exactAnswer_] := <|
+	"Discrepancy" -> Abs[exactAnswer - yImplicitEuler[t,\[Tau],t0,u0,A]], 
+	"Name" -> "Implicit Euler Method", 
+	"Result" -> yImplicitEuler[t,\[Tau],t0,u0,A],
+	"MaxStep" -> \[Tau],
+	"MinStep" -> \[Tau]
+|>
 
 End[]
 
