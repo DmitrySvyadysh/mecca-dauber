@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     40679,       1023]
-NotebookOptionsPosition[     38578,        959]
-NotebookOutlinePosition[     38924,        974]
-CellTagsIndexPosition[     38881,        971]
+NotebookDataLength[     55549,       1379]
+NotebookOptionsPosition[     53253,       1308]
+NotebookOutlinePosition[     53600,       1323]
+CellTagsIndexPosition[     53557,       1320]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -47,7 +47,8 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"\[Lambda]", " ", "=", " ", 
    RowBox[{"{", 
-    RowBox[{"1", ",", "2", ",", "3", ",", " ", "4"}], "}"}]}], ";"}]], "Input",
+    RowBox[{"1", ",", "2", ",", "3000", ",", " ", "4"}], "}"}]}], 
+  ";"}]], "Input",
  CellChangeTimes->{{3.6671565555608*^9, 3.667156561639558*^9}, {
    3.667156807264208*^9, 3.6671568104946084`*^9}, {3.667203368220316*^9, 
    3.66720337217583*^9}, {3.6672034419864197`*^9, 3.6672034421424203`*^9}, 
@@ -59,7 +60,7 @@ Cell[BoxData[
    3.6711013909402056`*^9}, 3.6717336907440567`*^9, {3.6717368310509605`*^9, 
    3.671736832409135*^9}, {3.6719586855972605`*^9, 3.6719586859872274`*^9}, {
    3.671958952250729*^9, 3.671958952547059*^9}, {3.672256184500551*^9, 
-   3.6722561848756323`*^9}}],
+   3.6722561848756323`*^9}, {3.6723378432239356`*^9, 3.6723378440300374`*^9}}],
 
 Cell[BoxData[
  RowBox[{" ", 
@@ -117,15 +118,6 @@ Cell[BoxData[
   RowBox[{"(", 
    RowBox[{
     RowBox[{"NotebookDirectory", "[", "]"}], " ", "<>", " ", 
-    "\"\<r-euler.m\>\""}], ")"}]}]], "Input",
- CellChangeTimes->{{3.6710983768423586`*^9, 3.671098378188529*^9}, {
-  3.672254718696286*^9, 3.672254719087336*^9}}],
-
-Cell[BoxData[
- RowBox[{"<<", 
-  RowBox[{"(", 
-   RowBox[{
-    RowBox[{"NotebookDirectory", "[", "]"}], " ", "<>", " ", 
     "\"\<mu-r-euler.m\>\""}], ")"}]}]], "Input",
  CellChangeTimes->{{3.672254725384143*^9, 3.6722547265312777`*^9}}],
 
@@ -164,10 +156,11 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"\[Tau]Main", ":=", "0.2"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"epsMain", " ", ":=", " ", "0.001"}], ";"}]}], "Input",
+  RowBox[{"epsMain", " ", ":=", " ", "0.01"}], ";"}]}], "Input",
  CellChangeTimes->{{3.6690158550151515`*^9, 3.669015889526605*^9}, {
    3.6690159379907713`*^9, 3.669015943013994*^9}, {3.671733667508092*^9, 
-   3.67173366866524*^9}, 3.6719588714418116`*^9}],
+   3.67173366866524*^9}, 3.6719588714418116`*^9, 3.6723379182024145`*^9, 
+   3.6723379543449802`*^9, 3.6723380099380074`*^9}],
 
 Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
@@ -227,6 +220,43 @@ Cell[BoxData[{
    3.6717333202245655`*^9, 3.6717333347714205`*^9}, {3.67173365510151*^9, 
    3.6717336605002003`*^9}, {3.6717344003535104`*^9, 3.6717344038429823`*^9}}],
 
+Cell[CellGroupData[{
+
+Cell[BoxData["yes"], "Input",
+ CellChangeTimes->{{3.672332300876427*^9, 3.672332301334486*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"Discrepancy\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "2.9817112353463434`*^28", ",", "4.297326791262787`*^29", ",", 
+      "2.6728916430075944`*^30", ",", "2.0354327536970555`*^29"}], "}"}]}], 
+   ",", 
+   RowBox[{"\<\"Name\"\>", "\[Rule]", "\<\"Euler Method\"\>"}], ",", 
+   RowBox[{"\<\"Result\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"-", "2.9817112353463434`*^28"}], ",", "4.297326791262787`*^29",
+       ",", 
+      RowBox[{"-", "2.6728916430075944`*^30"}], ",", 
+      "2.0354327536970555`*^29"}], "}"}]}], ",", 
+   RowBox[{"\<\"MaxStep\"\>", "\[Rule]", "0.2`"}], ",", 
+   RowBox[{"\<\"MinStep\"\>", "\[Rule]", "0.2`"}], ",", 
+   RowBox[{"\<\"Step counts\"\>", "\[Rule]", "10"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{
+  3.6723323018835554`*^9, 3.6723324011280985`*^9, {3.672332522681463*^9, 
+   3.672332530533455*^9}, 3.672332585013341*^9, {3.672332665353496*^9, 
+   3.6723326847499456`*^9}, 3.672332927880683*^9, {3.672333041872083*^9, 
+   3.672333065293043*^9}, 3.6723331322125015`*^9, 3.672336887004078*^9, 
+   3.672337511155997*^9, {3.6723375728747644`*^9, 3.6723376053168654`*^9}, {
+   3.6723377047034287`*^9, 3.6723377378096294`*^9}, {3.6723377715148726`*^9, 
+   3.6723378734357567`*^9}, 3.672337921758862*^9, 3.6723379568903017`*^9, 
+   3.672338011676227*^9}]
+}, Open  ]],
+
 Cell[BoxData["\[IndentingNewLine]"], "Input",
  CellChangeTimes->{3.6710991243197527`*^9}],
 
@@ -259,6 +289,37 @@ Cell[BoxData[{
    3.671733217108423*^9, 3.671733218996662*^9}, {3.6717333394970226`*^9, 
    3.671733349123251*^9}, {3.6717336521851387`*^9, 3.6717336536573253`*^9}, {
    3.671734408386532*^9, 3.671734412334036*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["yies"], "Input",
+ CellChangeTimes->{{3.672333269023794*^9, 3.672333269527858*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"Discrepancy\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "0.0018456456886271344`", ",", "0.0064477070444876675`", ",", 
+      "0.0011228718437776052`", ",", "0.0008621877572285858`"}], "}"}]}], ",", 
+   RowBox[{"\<\"Name\"\>", "\[Rule]", "\<\"Implicit Euler Method\"\>"}], ",", 
+   RowBox[{"\<\"Result\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "0.16686515747614278`", ",", "0.04251024199793319`", ",", 
+      "0.007804317660038073`", ",", "0.03717878865520546`"}], "}"}]}], ",", 
+   RowBox[{"\<\"MaxStep\"\>", "\[Rule]", "0.2`"}], ",", 
+   RowBox[{"\<\"MinStep\"\>", "\[Rule]", "0.2`"}], ",", 
+   RowBox[{"\<\"Step counts\"\>", "\[Rule]", "10"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{
+  3.6723332708260574`*^9, 3.672333413017994*^9, 3.6723368870630856`*^9, 
+   3.672337511222973*^9, {3.6723375729447746`*^9, 3.672337605378909*^9}, {
+   3.672337704761436*^9, 3.6723377378726196`*^9}, {3.6723377715798807`*^9, 
+   3.672337873497764*^9}, 3.6723379218188705`*^9, 3.6723379569533105`*^9, 
+   3.6723380117382336`*^9}]
+}, Open  ]],
 
 Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
@@ -297,6 +358,46 @@ Cell[BoxData[{
    3.671733353611821*^9, 3.6717334085348244`*^9}, {3.6717336480236087`*^9, 
    3.6717336498508587`*^9}, {3.6717344158874893`*^9, 3.671734424902638*^9}}],
 
+Cell[CellGroupData[{
+
+Cell[BoxData["swrsEuler"], "Input",
+ CellChangeTimes->{{3.6723334815006485`*^9, 3.6723334848840756`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"Discrepancy\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "0.00014885423484634064`", ",", "0.00038182532552274995`", ",", 
+      "0.0018286201260439708`", ",", "0.00018208860659727627`"}], "}"}]}], 
+   ",", 
+   RowBox[{"\<\"Name\"\>", 
+    "\[Rule]", "\<\"yEuler Solution With Recount\"\>"}], ",", 
+   RowBox[{"\<\"Result\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "0.16856194892992357`", ",", "0.035680709627922774`", ",", 
+      "0.008510065942304438`", ",", "0.036134512291379595`"}], "}"}]}], ",", 
+   RowBox[{"\<\"MaxStep\"\>", "\[Rule]", "0.0029414096270137884`"}], ",", 
+   RowBox[{"\<\"MinStep\"\>", "\[Rule]", "0.00005371093750000001`"}], ",", 
+   RowBox[{"\<\"Step counts\"\>", "\[Rule]", "2841"}], ",", 
+   RowBox[{"\<\"Recounts number\"\>", "\[Rule]", "399"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{
+  3.672333485484152*^9, 3.6723336167607446`*^9, 3.672333674620059*^9, {
+   3.67233371254185*^9, 3.672333745514018*^9}, 3.6723338283764925`*^9, 
+   3.672334154815752*^9, 3.672334433840017*^9, 3.6723345495116367`*^9, 
+   3.6723346304978724`*^9, 3.6723348693020554`*^9, 3.672335150334577*^9, 
+   3.672336887139095*^9, 3.6723375112849817`*^9, {3.6723375730207834`*^9, 
+   3.6723376054688907`*^9}, {3.672337704841446*^9, 3.672337737935629*^9}, {
+   3.6723377716638927`*^9, 3.6723378745838985`*^9}, 3.672337922871003*^9, 
+   3.6723379580214453`*^9, 3.6723380128563757`*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.6723348027696466`*^9, 3.67233480674515*^9}}],
+
 Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", 
   RowBox[{
@@ -322,73 +423,41 @@ Cell[BoxData[
    3.6717334271371946`*^9}, {3.6717336423318834`*^9, 3.671733644313137*^9}, 
    3.671734428474095*^9}],
 
+Cell[CellGroupData[{
+
+Cell[BoxData["swrsIEuler"], "Input"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"Discrepancy\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "0.012187448356956815`", ",", "0.0010752004650671915`", ",", 
+      "0.00015892873771538012`", ",", "0.0019683479977995813`"}], "}"}]}], 
+   ",", 
+   RowBox[{"\<\"Name\"\>", 
+    "\[Rule]", "\<\"yImplicitEuler Solution With Recount\"\>"}], ",", 
+   RowBox[{"\<\"Result\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "0.1565233548078131`", ",", "0.037137735418512716`", ",", 
+      "0.006840374553975848`", ",", "0.03434825290017729`"}], "}"}]}], ",", 
+   RowBox[{"\<\"MaxStep\"\>", "\[Rule]", "0.2527235142496471`"}], ",", 
+   RowBox[{"\<\"MinStep\"\>", "\[Rule]", "0.05500000000000001`"}], ",", 
+   RowBox[{"\<\"Step counts\"\>", "\[Rule]", "16"}], ",", 
+   RowBox[{"\<\"Recounts number\"\>", "\[Rule]", "2"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{
+  3.6723351628471813`*^9, 3.672336887212103*^9, 3.6723375113629923`*^9, {
+   3.6723375731067953`*^9, 3.6723376055408955`*^9}, {3.672337704916455*^9, 
+   3.6723377379996357`*^9}, {3.672337771743902*^9, 3.672337874685916*^9}, 
+   3.6723379229360323`*^9, 3.672337958082455*^9, 3.6723380129183836`*^9}]
+}, Open  ]],
+
 Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.671098170985115*^9, 3.671098171221148*^9}}],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"RMain", " ", ":=", " ", 
-   FractionBox["1", 
-    RowBox[{"1", "+", " ", 
-     RowBox[{"\[Tau]Main", "*", 
-      RowBox[{"Max", "[", "\[Lambda]", "]"}]}]}]]}], ";"}]], "Input",
- CellChangeTimes->{{3.669016130566882*^9, 3.669016233371728*^9}, 
-   3.671733639707547*^9}],
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"yREulerAnswer", " ", "=", " ", 
-   RowBox[{"yREuler", "[", 
-    RowBox[{
-    "tMain", ",", "\[Tau]Main", ",", "t0", ",", "u0", ",", "A", ",", 
-     "RMain"}], "]"}]}], ";"}], "\n", 
- RowBox[{
-  RowBox[{"yres", " ", "=", " ", 
-   RowBox[{"yREulerStatistics", "[", 
-    RowBox[{
-    "tMain", ",", "\[Tau]Main", ",", "t0", ",", "u0", ",", "A", ",", "RMain", 
-     ",", " ", "analyticSolutionAnswer"}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"AppendTo", "[", 
-   RowBox[{"associations", ",", "yres"}], " ", "]"}], ";"}]}], "Input",
- CellChangeTimes->{{3.671098274081258*^9, 3.671098279168911*^9}, {
-   3.6710984021995897`*^9, 3.671098410322624*^9}, {3.6717318286971464`*^9, 
-   3.6717318465974283`*^9}, {3.6717334425651617`*^9, 
-   3.6717334543126583`*^9}, {3.6717336366241555`*^9, 3.671733638520396*^9}, 
-   3.6717344333627157`*^9}],
-
-Cell[BoxData[
- RowBox[{"\[IndentingNewLine]", 
-  RowBox[{
-   RowBox[{
-    RowBox[{"yREulerNoR", " ", "=", " ", 
-     RowBox[{"REulerWithDeclaredR", "[", "RMain", "]"}]}], ";"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"REulerRecountAnswer", " ", "=", " ", 
-     RowBox[{"solveWithRecount", "[", 
-      RowBox[{
-      "yREulerNoR", ",", "epsMain", ",", "tMain", ",", "\[Tau]Main", ",", 
-       "t0", ",", "u0", ",", "A"}], "]"}]}], ";"}], "\n", 
-   RowBox[{
-    RowBox[{"swrsREuler", " ", "=", " ", 
-     RowBox[{"solveWithRecountStatistics", "[", 
-      RowBox[{
-      "yREulerNoR", ",", "epsMain", ",", "tMain", ",", "\[Tau]Main", ",", 
-       "t0", ",", "u0", ",", "A", ",", " ", "analyticSolutionAnswer"}], 
-      "]"}]}], ";"}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"AppendTo", "[", 
-     RowBox[{"associations", ",", "swrsREuler"}], " ", "]"}], 
-    ";"}]}]}]], "Input",
- CellChangeTimes->{{3.6710984373970814`*^9, 3.671098438388204*^9}, {
-   3.6717321453265066`*^9, 3.6717321957069273`*^9}, {3.671732608620569*^9, 
-   3.671732611140891*^9}, {3.6717327721144094`*^9, 3.6717327726824846`*^9}, {
-   3.6717328954694214`*^9, 3.67173296103578*^9}, 3.671733006794613*^9, {
-   3.6717334743352118`*^9, 3.6717335159355135`*^9}, 3.6717335648767514`*^9, {
-   3.6717336318775516`*^9, 3.6717336345058846`*^9}, 3.671734437928299*^9}],
 
 Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", 
@@ -396,7 +465,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.6717337326463947`*^9, 3.671733732950434*^9}, {
    3.6717337668777585`*^9, 3.6717337690450363`*^9}, 3.6717351672882714`*^9}],
 
-Cell[BoxData[
+Cell[BoxData[{
  RowBox[{
   RowBox[{
    RowBox[{"fakeRMain", "[", 
@@ -404,10 +473,8 @@ Cell[BoxData[
    FractionBox["1", 
     RowBox[{"1", "+", " ", 
      RowBox[{"\[Tau]Main", "*", 
-      RowBox[{"Max", "[", "\[Lambda]", "]"}]}]}]]}], ";"}]], "Input",
- CellChangeTimes->{{3.672256058250596*^9, 3.672256078671178*^9}}],
-
-Cell[BoxData[{
+      RowBox[{"Max", "[", "\[Lambda]", "]"}]}]}]]}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"expRMain", " ", "[", 
@@ -432,79 +499,155 @@ Cell[BoxData[{
    3.672251339459306*^9, 3.6722513457441*^9}, {3.672254748619069*^9, 
    3.6722548049141836`*^9}, {3.6722548835631227`*^9, 3.672254889821916*^9}, {
    3.672255099764473*^9, 3.6722551321935496`*^9}, {3.6722559255468283`*^9, 
-   3.672255991517161*^9}}],
-
-Cell[CellGroupData[{
+   3.672255991517161*^9}, {3.672336625489024*^9, 3.6723366260860987`*^9}}],
 
 Cell[BoxData[{
- RowBox[{"yMuREuler", "[", 
+ RowBox[{
+  RowBox[{"muRMainAnswer", " ", "=", " ", 
+   RowBox[{"yMuREuler", "[", 
+    RowBox[{
+    "tMain", ",", "\[Tau]Main", ",", "t0", ",", "u0", ",", "A", ",", 
+     "muRMain"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{
-  "tMain", ",", "\[Tau]Main", ",", "t0", ",", "u0", ",", "A", ",", 
-   "muRMain"}], "]"}], "\[IndentingNewLine]", 
- RowBox[{"yMuREuler", "[", 
+   RowBox[{"ymresMuRMain", " ", "=", " ", 
+    RowBox[{"yMuREulerStatistics", "[", 
+     RowBox[{
+     "tMain", ",", "\[Tau]Main", ",", "t0", ",", "u0", ",", "A", ",", 
+      "muRMain", ",", "analyticSolutionAnswer"}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"expRMainAnswer", " ", "=", " ", 
+   RowBox[{"yMuREuler", "[", 
+    RowBox[{
+    "tMain", ",", "\[Tau]Main", ",", "t0", ",", "u0", ",", "A", ",", 
+     "expRMain"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{
-  "tMain", ",", "\[Tau]Main", ",", "t0", ",", "u0", ",", "A", ",", 
-   "expRMain"}], "]"}], "\[IndentingNewLine]", 
- RowBox[{"yMuREuler", "[", 
-  RowBox[{
-  "tMain", ",", "\[Tau]Main", ",", "t0", ",", "u0", ",", "A", ",", 
-   "fakeRMain"}], "]"}]}], "Input",
+   RowBox[{"ymresExpRMain", " ", "=", " ", 
+    RowBox[{"yMuREulerStatistics", "[", 
+     RowBox[{
+     "tMain", ",", "\[Tau]Main", ",", "t0", ",", "u0", ",", "A", ",", 
+      "expRMain", ",", "analyticSolutionAnswer"}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"fakeRMainAnswer", " ", "=", " ", 
+   RowBox[{"yMuREuler", "[", 
+    RowBox[{
+    "tMain", ",", "\[Tau]Main", ",", "t0", ",", "u0", ",", "A", ",", 
+     "fakeRMain"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ymresFakeRMain", " ", "=", " ", 
+   RowBox[{"yMuREulerStatistics", "[", 
+    RowBox[{
+    "tMain", ",", "\[Tau]Main", ",", "t0", ",", "u0", ",", "A", ",", 
+     "fakeRMain", ",", "analyticSolutionAnswer"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{{3.672254820556161*^9, 3.6722548345549293`*^9}, {
-  3.672256002033491*^9, 3.672256017845487*^9}, {3.6722560828777084`*^9, 
-  3.672256101297035*^9}}],
+   3.672256002033491*^9, 3.672256017845487*^9}, {3.6722560828777084`*^9, 
+   3.672256101297035*^9}, {3.6723365856939945`*^9, 3.6723368096373177`*^9}, {
+   3.672336857492347*^9, 3.6723368754806213`*^9}, 3.6723371538168025`*^9, {
+   3.672337227741143*^9, 3.6723372287783146`*^9}, {3.6723373500456033`*^9, 
+   3.672337363317279*^9}}],
 
 Cell[BoxData[
- RowBox[{"{", 
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.672337283290166*^9, 3.672337283449185*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"muRMainNoR", " ", "=", " ", 
+   RowBox[{"muREulerWithDeclaredR", "[", "muRMain", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"muRMainRecountAnswer", " ", "=", " ", 
+   RowBox[{"solveWithRecount", "[", 
+    RowBox[{
+    "muRMainNoR", ",", "epsMain", ",", "tMain", ",", "\[Tau]Main", ",", "t0", 
+     ",", "u0", ",", "A"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{
-  "0.18842952826732956`", ",", "0.040161873753047875`", ",", 
-   "0.022724184444527628`", ",", "0.02902231872984049`"}], "}"}]], "Output",
- CellChangeTimes->{
-  3.6722548540153904`*^9, 3.6722548989450674`*^9, {3.672254940700345*^9, 
-   3.6722549600747943`*^9}, 3.6722549952962456`*^9, 3.6722550871018496`*^9, 
-   3.6722551172806625`*^9, 3.6722551835380373`*^9, 3.6722552831846323`*^9, 
-   3.672255472541565*^9, 3.672255567914624*^9, 3.6722556812269425`*^9, 
-   3.672255734002613*^9, 3.67225588850914*^9, 3.6722560215479555`*^9, 
-   3.672256106124645*^9, 3.6722561881750154`*^9}],
+   RowBox[{"swrsMuRMain", " ", "=", " ", 
+    RowBox[{"solveWithRecountStatistics", "[", 
+     RowBox[{
+     "muRMainNoR", ",", "epsMain", ",", "tMain", ",", "\[Tau]Main", ",", "t0",
+       ",", "u0", ",", "A", ",", " ", "analyticSolutionAnswer"}], "]"}]}], 
+   ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"expRMainNoR", " ", "=", " ", 
+   RowBox[{"muREulerWithDeclaredR", "[", "expRMain", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"expRMainRecountAnswer", " ", "=", " ", 
+   RowBox[{"solveWithRecount", "[", 
+    RowBox[{
+    "expRMainNoR", ",", "epsMain", ",", "tMain", ",", "\[Tau]Main", ",", "t0",
+      ",", "u0", ",", "A"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"swrsExpRMain", " ", "=", " ", 
+    RowBox[{"solveWithRecountStatistics", "[", 
+     RowBox[{
+     "expRMainNoR", ",", "epsMain", ",", "tMain", ",", "\[Tau]Main", ",", 
+      "t0", ",", "u0", ",", "A", ",", " ", "analyticSolutionAnswer"}], 
+     "]"}]}], ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"fakeRMainNoR", " ", "=", " ", 
+   RowBox[{"muREulerWithDeclaredR", "[", "fakeRMain", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"fakeRMainRecountAnswer", " ", "=", " ", 
+   RowBox[{"solveWithRecount", "[", 
+    RowBox[{
+    "fakeRMainNoR", ",", "epsMain", ",", "tMain", ",", "\[Tau]Main", ",", 
+     "t0", ",", "u0", ",", "A"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"swrsFakeRMain", " ", "=", " ", 
+   RowBox[{"solveWithRecountStatistics", "[", 
+    RowBox[{
+    "fakeRMainNoR", ",", "epsMain", ",", "tMain", ",", "\[Tau]Main", ",", 
+     "t0", ",", "u0", ",", "A", ",", " ", "analyticSolutionAnswer"}], "]"}]}],
+   ";"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.6723369264510655`*^9, 3.6723369268331127`*^9}, {
+   3.6723369923733945`*^9, 3.6723371598705664`*^9}, {3.67233719220768*^9, 
+   3.6723371934218063`*^9}, {3.6723372517681828`*^9, 
+   3.6723373412964954`*^9}, {3.6723373790222645`*^9, 3.6723374196754284`*^9}, 
+   3.67233781388223*^9}],
 
 Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-  "0.15142432863961497`", ",", "0.029113612296347992`", ",", 
-   "0.01795108350728777`", ",", "0.022366845759095477`"}], "}"}]], "Output",
- CellChangeTimes->{
-  3.6722548540153904`*^9, 3.6722548989450674`*^9, {3.672254940700345*^9, 
-   3.6722549600747943`*^9}, 3.6722549952962456`*^9, 3.6722550871018496`*^9, 
-   3.6722551172806625`*^9, 3.6722551835380373`*^9, 3.6722552831846323`*^9, 
-   3.672255472541565*^9, 3.672255567914624*^9, 3.6722556812269425`*^9, 
-   3.672255734002613*^9, 3.67225588850914*^9, 3.6722560215479555`*^9, 
-   3.672256106124645*^9, 3.672256188181017*^9}],
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.6723372869866314`*^9, 3.672337287137652*^9}}],
 
 Cell[BoxData[
- RowBox[{"{", 
+ RowBox[{"\[IndentingNewLine]", 
   RowBox[{
-  "0.3500020888232059`", ",", "0.11159391121601217`", ",", 
-   "0.051898627904754024`", ",", "0.06685215395897977`"}], "}"}]], "Output",
- CellChangeTimes->{
-  3.6722548540153904`*^9, 3.6722548989450674`*^9, {3.672254940700345*^9, 
-   3.6722549600747943`*^9}, 3.6722549952962456`*^9, 3.6722550871018496`*^9, 
-   3.6722551172806625`*^9, 3.6722551835380373`*^9, 3.6722552831846323`*^9, 
-   3.672255472541565*^9, 3.672255567914624*^9, 3.6722556812269425`*^9, 
-   3.672255734002613*^9, 3.67225588850914*^9, 3.6722560215479555`*^9, 
-   3.672256106124645*^9, 3.672256188184018*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData["analyticSolutionAnswer"], "Input",
- CellChangeTimes->{{3.6722561634168863`*^9, 3.672256166755308*^9}}],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-  "0.17562951862907408`", ",", "0.042863160958651905`", ",", 
-   "0.02291161972007959`", ",", "0.02905240226697942`"}], "}"}]], "Output",
- CellChangeTimes->{{3.6722561671313562`*^9, 3.6722561882010193`*^9}}]
-}, Open  ]],
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"associations", ",", "ymresMuRMain"}], " ", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"associations", ",", "swrsMuRMain"}], " ", "]"}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"associations", ",", "ymresExpRMain"}], " ", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"associations", ",", "swrsExpRMain"}], " ", "]"}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"associations", ",", "ymresFakeRMain"}], " ", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"associations", ",", "swrsFakeRMain"}], " ", "]"}], ";"}], 
+   "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.672337431515901*^9, 3.6723375004806185`*^9}, {
+  3.6723375492497835`*^9, 3.6723376026615324`*^9}, {3.6723376986226606`*^9, 
+  3.67233773415315*^9}, {3.672337767691388*^9, 3.6723378044170437`*^9}}],
 
 Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", 
@@ -521,7 +664,8 @@ Cell[BoxData[{
    RowBox[{"{", 
     RowBox[{
     "\"\<Name\>\"", ",", " ", "\"\<Result\>\"", ",", " ", "\"\<MaxStep\>\"", 
-     ",", " ", "\"\<MinStep\>\"", ",", " ", "\"\<Discrepancy\>\""}], "}"}]}], 
+     ",", " ", "\"\<MinStep\>\"", ",", " ", "\"\<Discrepancy\>\"", ",", 
+     "\"\<Step counts\>\"", ",", " ", "\"\<Recounts number\>\""}], "}"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"statisticsTable", " ", "=", " ", 
@@ -560,7 +704,8 @@ Cell[BoxData[{
    3.6717364729933214`*^9, 3.671736548038884*^9}, {3.6717366112089367`*^9, 
    3.6717366561216636`*^9}, 3.671736705443951*^9, 3.6717367414715414`*^9, {
    3.6717367778511796`*^9, 3.6717368177662687`*^9}, 3.6717369797609167`*^9, 
-   3.671737121562994*^9}],
+   3.671737121562994*^9, {3.672331716985632*^9, 3.6723317433889637`*^9}, {
+   3.672331777228244*^9, 3.672331786357398*^9}, 3.6723318345934925`*^9}],
 
 Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", 
@@ -606,7 +751,19 @@ Cell[BoxData[
              RowBox[{
              "associations", "\[LeftDoubleBracket]", "i", 
               "\[RightDoubleBracket]"}], ",", "\"\<Discrepancy\>\"", ",", 
-             "\"\<NO\>\""}], "]"}], "]"}]}], "\[IndentingNewLine]", "}"}]}], 
+             "\"\<NO\>\""}], "]"}], "]"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"Lookup", "[", 
+           RowBox[{
+            RowBox[{
+            "associations", "\[LeftDoubleBracket]", "i", 
+             "\[RightDoubleBracket]"}], ",", "\"\<Step counts\>\"", ",", 
+            "\"\<NO\>\""}], "]"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"Lookup", "[", 
+           RowBox[{
+            RowBox[{
+            "associations", "\[LeftDoubleBracket]", "i", 
+             "\[RightDoubleBracket]"}], ",", "\"\<Recounts number\>\"", ",", 
+            "\"\<NO\>\""}], "]"}]}], "\[IndentingNewLine]", "}"}]}], 
        "\[IndentingNewLine]", "\[IndentingNewLine]", "]"}], 
       "\[IndentingNewLine]", ",", 
       RowBox[{"{", 
@@ -614,7 +771,8 @@ Cell[BoxData[
         RowBox[{"Length", "[", "associations", "]"}]}], " ", "}"}]}], 
      "\[IndentingNewLine]", "]"}], ";"}]}]}]], "Input",
  CellChangeTimes->{{3.671736981886188*^9, 3.6717370043820577`*^9}, {
-  3.6717371149031453`*^9, 3.6717372738474045`*^9}}],
+  3.6717371149031453`*^9, 3.6717372738474045`*^9}, {3.6723318553831205`*^9, 
+  3.6723318858379707`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -627,15 +785,15 @@ Cell[BoxData[
  TagBox[
   RowBox[{"(", "\[NoBreak]", GridBox[{
      {"\<\"Name\"\>", "\<\"Result\"\>", "\<\"MaxStep\"\>", "\<\"MinStep\"\>", \
-"\<\"Discrepancy\"\>"},
+"\<\"Discrepancy\"\>", "\<\"Step counts\"\>", "\<\"Recounts number\"\>"},
      {"\<\"Analytic Solution\"\>", 
       TagBox[
        RowBox[{"(", "\[NoBreak]", 
         TagBox[GridBox[{
-           {"0.17562951862907408`"},
-           {"0.042863160958651905`"},
-           {"0.02291161972007959`"},
-           {"0.02905240226697942`"}
+           {"0.1687108031647699`"},
+           {"0.036062534953445524`"},
+           {"0.0066814458162604675`"},
+           {"0.03631660089797687`"}
           },
           
           GridBoxAlignment->{
@@ -653,15 +811,17 @@ Cell[BoxData[
         MatrixForm[BoxForm`e$]]], "\<\"NO\"\>", "\<\"NO\"\>", 
       TagBox["0",
        Function[BoxForm`e$, 
-        MatrixForm[BoxForm`e$]]]},
+        MatrixForm[BoxForm`e$]]], "\<\"NO\"\>", "\<\"NO\"\>"},
      {"\<\"Euler Method\"\>", 
       TagBox[
        RowBox[{"(", "\[NoBreak]", 
         TagBox[GridBox[{
-           {"0.1130228141374735`"},
-           {"0.019510272574644327`"},
-           {"0.013282506309465297`"},
-           {"0.016043580186930397`"}
+           {
+            RowBox[{"-", "2.9817112353463434`*^28"}]},
+           {"4.297326791262787`*^29"},
+           {
+            RowBox[{"-", "2.6728916430075944`*^30"}]},
+           {"2.0354327536970555`*^29"}
           },
           
           GridBoxAlignment->{
@@ -680,10 +840,10 @@ Cell[BoxData[
       TagBox[
        RowBox[{"(", "\[NoBreak]", 
         TagBox[GridBox[{
-           {"0.06260670449160058`"},
-           {"0.023352888384007578`"},
-           {"0.009629113410614294`"},
-           {"0.013008822080049023`"}
+           {"2.9817112353463434`*^28"},
+           {"4.297326791262787`*^29"},
+           {"2.6728916430075944`*^30"},
+           {"2.0354327536970555`*^29"}
           },
           
           GridBoxAlignment->{
@@ -698,15 +858,15 @@ Cell[BoxData[
               Offset[0.2]}, "RowsIndexed" -> {}}],
          Column], "\[NoBreak]", ")"}],
        Function[BoxForm`e$, 
-        MatrixForm[BoxForm`e$]]]},
+        MatrixForm[BoxForm`e$]]], "10", "\<\"NO\"\>"},
      {"\<\"Implicit Euler Method\"\>", 
       TagBox[
        RowBox[{"(", "\[NoBreak]", 
         TagBox[GridBox[{
-           {"0.17312871925074003`"},
-           {"0.0486560013126972`"},
-           {"0.025587352066533117`"},
-           {"0.031562770192501206`"}
+           {"0.16686515747614278`"},
+           {"0.04251024199793319`"},
+           {"0.007804317660038073`"},
+           {"0.03717878865520546`"}
           },
           
           GridBoxAlignment->{
@@ -725,10 +885,10 @@ Cell[BoxData[
       TagBox[
        RowBox[{"(", "\[NoBreak]", 
         TagBox[GridBox[{
-           {"0.0025007993783340565`"},
-           {"0.005792840354045294`"},
-           {"0.0026757323464535257`"},
-           {"0.002510367925521787`"}
+           {"0.0018456456886271344`"},
+           {"0.0064477070444876675`"},
+           {"0.0011228718437776052`"},
+           {"0.0008621877572285858`"}
           },
           
           GridBoxAlignment->{
@@ -743,15 +903,15 @@ Cell[BoxData[
               Offset[0.2]}, "RowsIndexed" -> {}}],
          Column], "\[NoBreak]", ")"}],
        Function[BoxForm`e$, 
-        MatrixForm[BoxForm`e$]]]},
+        MatrixForm[BoxForm`e$]]], "10", "\<\"NO\"\>"},
      {"\<\"yEuler Solution With Recount\"\>", 
       TagBox[
        RowBox[{"(", "\[NoBreak]", 
         TagBox[GridBox[{
-           {"0.16314013317380455`"},
-           {"0.036279935026310065`"},
-           {"0.02024107854192944`"},
-           {"0.025691155144113444`"}
+           {"0.16856194892992357`"},
+           {"0.035680709627922774`"},
+           {"0.008510065942304438`"},
+           {"0.036134512291379595`"}
           },
           
           GridBoxAlignment->{
@@ -766,15 +926,15 @@ Cell[BoxData[
               Offset[0.2]}, "RowsIndexed" -> {}}],
          Column], "\[NoBreak]", ")"}],
        Function[BoxForm`e$, 
-        MatrixForm[BoxForm`e$]]], "0.11688857326491756`", 
-      "0.013397430062500007`", 
+        MatrixForm[BoxForm`e$]]], "0.0029414096270137884`", 
+      "0.00005371093750000001`", 
       TagBox[
        RowBox[{"(", "\[NoBreak]", 
         TagBox[GridBox[{
-           {"0.012489385455269536`"},
-           {"0.006583225932341841`"},
-           {"0.0026705411781501494`"},
-           {"0.0033612471228659756`"}
+           {"0.00014885423484634064`"},
+           {"0.00038182532552274995`"},
+           {"0.0018286201260439708`"},
+           {"0.00018208860659727627`"}
           },
           
           GridBoxAlignment->{
@@ -789,15 +949,15 @@ Cell[BoxData[
               Offset[0.2]}, "RowsIndexed" -> {}}],
          Column], "\[NoBreak]", ")"}],
        Function[BoxForm`e$, 
-        MatrixForm[BoxForm`e$]]]},
+        MatrixForm[BoxForm`e$]]], "2841", "399"},
      {"\<\"yImplicitEuler Solution With Recount\"\>", 
       TagBox[
        RowBox[{"(", "\[NoBreak]", 
         TagBox[GridBox[{
-           {"0.1743982023953837`"},
-           {"0.04499073094167384`"},
-           {"0.023761142877810466`"},
-           {"0.029874895250695054`"}
+           {"0.1565233548078131`"},
+           {"0.037137735418512716`"},
+           {"0.006840374553975848`"},
+           {"0.03434825290017729`"}
           },
           
           GridBoxAlignment->{
@@ -812,15 +972,15 @@ Cell[BoxData[
               Offset[0.2]}, "RowsIndexed" -> {}}],
          Column], "\[NoBreak]", ")"}],
        Function[BoxForm`e$, 
-        MatrixForm[BoxForm`e$]]], "0.14143517365055028`", 
-      "0.013750000000000002`", 
+        MatrixForm[BoxForm`e$]]], "0.2527235142496471`", 
+      "0.05500000000000001`", 
       TagBox[
        RowBox[{"(", "\[NoBreak]", 
         TagBox[GridBox[{
-           {"0.0012313162336903827`"},
-           {"0.0021275699830219374`"},
-           {"0.0008495231577308748`"},
-           {"0.0008224929837156343`"}
+           {"0.012187448356956815`"},
+           {"0.0010752004650671915`"},
+           {"0.00015892873771538012`"},
+           {"0.0019683479977995813`"}
           },
           
           GridBoxAlignment->{
@@ -835,15 +995,16 @@ Cell[BoxData[
               Offset[0.2]}, "RowsIndexed" -> {}}],
          Column], "\[NoBreak]", ")"}],
        Function[BoxForm`e$, 
-        MatrixForm[BoxForm`e$]]]},
-     {"\<\"Euler Method With R\"\>", 
+        MatrixForm[BoxForm`e$]]], "16", "2"},
+     {"\<\"Euler Method With muRMain\"\>", 
       TagBox[
        RowBox[{"(", "\[NoBreak]", 
         TagBox[GridBox[{
-           {"0.3500020888232059`"},
-           {"0.11159391121601217`"},
-           {"0.051898627904754024`"},
-           {"0.06685215395897977`"}
+           {"0.9380169933556912`"},
+           {"1.7695992162443943`"},
+           {
+            RowBox[{"-", "3.9897573052207838`"}]},
+           {"1.3278591331326637`"}
           },
           
           GridBoxAlignment->{
@@ -862,10 +1023,10 @@ Cell[BoxData[
       TagBox[
        RowBox[{"(", "\[NoBreak]", 
         TagBox[GridBox[{
-           {"0.1743725701941318`"},
-           {"0.06873075025736027`"},
-           {"0.028987008184674434`"},
-           {"0.03779975169200035`"}
+           {"0.7693061901909213`"},
+           {"1.7335366812909487`"},
+           {"3.996438751037044`"},
+           {"1.2915425322346867`"}
           },
           
           GridBoxAlignment->{
@@ -880,15 +1041,15 @@ Cell[BoxData[
               Offset[0.2]}, "RowsIndexed" -> {}}],
          Column], "\[NoBreak]", ")"}],
        Function[BoxForm`e$, 
-        MatrixForm[BoxForm`e$]]]},
-     {"\<\"Private`yREulerNoR Solution With Recount\"\>", 
+        MatrixForm[BoxForm`e$]]], "10", "\<\"NO\"\>"},
+     {"\<\"Private`yMuREulerNoR Solution With Recount\"\>", 
       TagBox[
        RowBox[{"(", "\[NoBreak]", 
         TagBox[GridBox[{
-           {"0.38163571349731495`"},
-           {"0.13793519295149362`"},
-           {"0.06596139784972223`"},
-           {"0.08098364645092235`"}
+           {"0.16878028132528963`"},
+           {"0.036678189423762324`"},
+           {"0.002898571451299063`"},
+           {"0.03662624578204736`"}
           },
           
           GridBoxAlignment->{
@@ -903,15 +1064,15 @@ Cell[BoxData[
               Offset[0.2]}, "RowsIndexed" -> {}}],
          Column], "\[NoBreak]", ")"}],
        Function[BoxForm`e$, 
-        MatrixForm[BoxForm`e$]]], "0.1596729366367291`", 
-      "0.02435896375000001`", 
+        MatrixForm[BoxForm`e$]]], "0.0029414096270137884`", 
+      "0.00005371093750000001`", 
       TagBox[
        RowBox[{"(", "\[NoBreak]", 
         TagBox[GridBox[{
-           {"0.20600619486824087`"},
-           {"0.09507203199284171`"},
-           {"0.04304977812964264`"},
-           {"0.05193124418394293`"}
+           {"0.00006947816051972033`"},
+           {"0.0006156544703167996`"},
+           {"0.0037828743649614043`"},
+           {"0.00030964488407048824`"}
           },
           
           GridBoxAlignment->{
@@ -926,7 +1087,190 @@ Cell[BoxData[
               Offset[0.2]}, "RowsIndexed" -> {}}],
          Column], "\[NoBreak]", ")"}],
        Function[BoxForm`e$, 
-        MatrixForm[BoxForm`e$]]]}
+        MatrixForm[BoxForm`e$]]], "2836", "398"},
+     {"\<\"Euler Method With expRMain\"\>", 
+      TagBox[
+       RowBox[{"(", "\[NoBreak]", 
+        TagBox[GridBox[{
+           {"0.9372990194979491`"},
+           {"1.778663252439677`"},
+           {
+            RowBox[{"-", "4.048181032637494`"}]},
+           {"1.331789192177001`"}
+          },
+          
+          GridBoxAlignment->{
+           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+            "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.27999999999999997`], {
+               Offset[0.5599999999999999]}, 
+              Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+              Offset[0.2], {
+               Offset[0.4]}, 
+              Offset[0.2]}, "RowsIndexed" -> {}}],
+         Column], "\[NoBreak]", ")"}],
+       Function[BoxForm`e$, 
+        MatrixForm[BoxForm`e$]]], "0.2`", "0.2`", 
+      TagBox[
+       RowBox[{"(", "\[NoBreak]", 
+        TagBox[GridBox[{
+           {"0.7685882163331792`"},
+           {"1.7426007174862315`"},
+           {"4.054862478453755`"},
+           {"1.2954725912790241`"}
+          },
+          
+          GridBoxAlignment->{
+           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+            "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.27999999999999997`], {
+               Offset[0.5599999999999999]}, 
+              Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+              Offset[0.2], {
+               Offset[0.4]}, 
+              Offset[0.2]}, "RowsIndexed" -> {}}],
+         Column], "\[NoBreak]", ")"}],
+       Function[BoxForm`e$, 
+        MatrixForm[BoxForm`e$]]], "10", "\<\"NO\"\>"},
+     {"\<\"Private`yMuREulerNoR Solution With Recount\"\>", 
+      TagBox[
+       RowBox[{"(", "\[NoBreak]", 
+        TagBox[GridBox[{
+           {"0.16876021937300842`"},
+           {"0.03572697069974496`"},
+           {"0.008637002672860373`"},
+           {"0.03616996738109808`"}
+          },
+          
+          GridBoxAlignment->{
+           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+            "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.27999999999999997`], {
+               Offset[0.5599999999999999]}, 
+              Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+              Offset[0.2], {
+               Offset[0.4]}, 
+              Offset[0.2]}, "RowsIndexed" -> {}}],
+         Column], "\[NoBreak]", ")"}],
+       Function[BoxForm`e$, 
+        MatrixForm[BoxForm`e$]]], "0.0029414096270137884`", 
+      "0.00005371093750000001`", 
+      TagBox[
+       RowBox[{"(", "\[NoBreak]", 
+        TagBox[GridBox[{
+           {"0.00004941620823850634`"},
+           {"0.00033556425370056403`"},
+           {"0.0019555568565999054`"},
+           {"0.00014663351687878995`"}
+          },
+          
+          GridBoxAlignment->{
+           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+            "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.27999999999999997`], {
+               Offset[0.5599999999999999]}, 
+              Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+              Offset[0.2], {
+               Offset[0.4]}, 
+              Offset[0.2]}, "RowsIndexed" -> {}}],
+         Column], "\[NoBreak]", ")"}],
+       Function[BoxForm`e$, 
+        MatrixForm[BoxForm`e$]]], "2833", "398"},
+     {"\<\"Euler Method With fakeRMain\"\>", 
+      TagBox[
+       RowBox[{"(", "\[NoBreak]", 
+        TagBox[GridBox[{
+           {"0.9901455594784624`"},
+           {"1.1132129015111198`"},
+           {"0.24749101919120578`"},
+           {"1.044770431832195`"}
+          },
+          
+          GridBoxAlignment->{
+           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+            "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.27999999999999997`], {
+               Offset[0.5599999999999999]}, 
+              Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+              Offset[0.2], {
+               Offset[0.4]}, 
+              Offset[0.2]}, "RowsIndexed" -> {}}],
+         Column], "\[NoBreak]", ")"}],
+       Function[BoxForm`e$, 
+        MatrixForm[BoxForm`e$]]], "0.2`", "0.2`", 
+      TagBox[
+       RowBox[{"(", "\[NoBreak]", 
+        TagBox[GridBox[{
+           {"0.8214347563136924`"},
+           {"1.0771503665576743`"},
+           {"0.24080957337494532`"},
+           {"1.0084538309342181`"}
+          },
+          
+          GridBoxAlignment->{
+           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+            "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.27999999999999997`], {
+               Offset[0.5599999999999999]}, 
+              Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+              Offset[0.2], {
+               Offset[0.4]}, 
+              Offset[0.2]}, "RowsIndexed" -> {}}],
+         Column], "\[NoBreak]", ")"}],
+       Function[BoxForm`e$, 
+        MatrixForm[BoxForm`e$]]], "10", "\<\"NO\"\>"},
+     {"\<\"Private`yMuREulerNoR Solution With Recount\"\>", 
+      TagBox[
+       RowBox[{"(", "\[NoBreak]", 
+        TagBox[GridBox[{
+           {"0.9901537405913667`"},
+           {"1.1132559692692903`"},
+           {"0.2475034002448217`"},
+           {"1.044843276476141`"}
+          },
+          
+          GridBoxAlignment->{
+           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+            "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.27999999999999997`], {
+               Offset[0.5599999999999999]}, 
+              Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+              Offset[0.2], {
+               Offset[0.4]}, 
+              Offset[0.2]}, "RowsIndexed" -> {}}],
+         Column], "\[NoBreak]", ")"}],
+       Function[BoxForm`e$, 
+        MatrixForm[BoxForm`e$]]], "0.2238575608138097`", 
+      "0.027500000000000004`", 
+      TagBox[
+       RowBox[{"(", "\[NoBreak]", 
+        TagBox[GridBox[{
+           {"0.8214429374265968`"},
+           {"1.0771934343158447`"},
+           {"0.24082195442856125`"},
+           {"1.0085266755781641`"}
+          },
+          
+          GridBoxAlignment->{
+           "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+            "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.27999999999999997`], {
+               Offset[0.5599999999999999]}, 
+              Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+              Offset[0.2], {
+               Offset[0.4]}, 
+              Offset[0.2]}, "RowsIndexed" -> {}}],
+         Column], "\[NoBreak]", ")"}],
+       Function[BoxForm`e$, 
+        MatrixForm[BoxForm`e$]]], "22", "3"}
     },
     GridBoxAlignment->{
      "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
@@ -947,7 +1291,12 @@ Cell[BoxData[
    3.6717368046005907`*^9, 3.6717368374678087`*^9}, {3.671737266681492*^9, 
    3.6717372802842274`*^9}, 3.671958689715626*^9, 3.671958882143552*^9, 
    3.6719589567865224`*^9, 3.672251220002207*^9, 3.67225481359828*^9, 
-   3.6722548541224036`*^9, 3.6722554727765956`*^9, 3.672256188289031*^9}]
+   3.6722548541224036`*^9, 3.6722554727765956`*^9, 3.672256188289031*^9, 
+   3.6723319644949107`*^9, 3.6723368874671407`*^9, 3.6723375117820826`*^9, {
+   3.6723375734498396`*^9, 3.6723376058799753`*^9}, {3.6723377052364955`*^9, 
+   3.6723377383456793`*^9}, {3.672337772161954*^9, 3.6723378184788074`*^9}, {
+   3.672337850841899*^9, 3.6723378781243467`*^9}, 3.6723379262294273`*^9, 
+   3.6723379611808453`*^9, 3.6723380159957733`*^9}]
 }, Open  ]],
 
 Cell[BoxData["\[IndentingNewLine]"], "Input",
@@ -957,8 +1306,8 @@ Cell[BoxData[
  RowBox[{"createXLS", "[", "statisticsTable", "]"}]], "Input",
  CellChangeTimes->{{3.6717363043558235`*^9, 3.671736313509989*^9}}]
 },
-WindowSize->{1350, 680},
-WindowMargins->{{-2, Automatic}, {Automatic, 5}},
+WindowSize->{1366, 685},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
 StyleDefinitions->"Default.nb"
 ]
@@ -976,55 +1325,62 @@ Notebook[{
 Cell[558, 20, 205, 5, 31, "Input"],
 Cell[766, 27, 328, 6, 31, "Input"],
 Cell[1097, 35, 394, 8, 31, "Input"],
-Cell[1494, 45, 1011, 16, 31, "Input"],
-Cell[2508, 63, 130, 4, 31, "Input"],
-Cell[2641, 69, 349, 8, 31, "Input"],
-Cell[2993, 79, 281, 7, 31, "Input"],
-Cell[3277, 88, 284, 7, 31, "Input"],
-Cell[3564, 97, 295, 7, 31, "Input"],
-Cell[3862, 106, 231, 6, 31, "Input"],
-Cell[4096, 114, 282, 7, 31, "Input"],
-Cell[4381, 123, 236, 6, 31, "Input"],
-Cell[4620, 131, 240, 6, 31, "Input"],
-Cell[4863, 139, 380, 9, 52, "Input"],
-Cell[5246, 150, 398, 8, 31, "Input"],
-Cell[5647, 160, 436, 9, 72, "Input"],
-Cell[6086, 171, 150, 2, 72, "Input"],
-Cell[6239, 175, 1444, 25, 72, "Input"],
-Cell[7686, 202, 146, 2, 72, "Input"],
-Cell[7835, 206, 1093, 21, 72, "Input"],
-Cell[8931, 229, 89, 1, 52, "Input"],
-Cell[9023, 232, 1613, 28, 72, "Input"],
-Cell[10639, 262, 226, 3, 72, "Input"],
-Cell[10868, 267, 1721, 30, 72, "Input"],
-Cell[12592, 299, 1039, 23, 112, "Input"],
-Cell[13634, 324, 146, 2, 72, "Input"],
-Cell[13783, 328, 303, 8, 48, "Input"],
-Cell[14089, 338, 889, 21, 72, "Input"],
-Cell[14981, 361, 1347, 29, 112, "Input"],
-Cell[16331, 392, 252, 4, 92, "Input"],
-Cell[16586, 398, 337, 9, 48, "Input"],
-Cell[16926, 409, 945, 25, 83, "Input"],
+Cell[1494, 45, 1067, 17, 31, "Input"],
+Cell[2564, 64, 130, 4, 31, "Input"],
+Cell[2697, 70, 349, 8, 31, "Input"],
+Cell[3049, 80, 281, 7, 31, "Input"],
+Cell[3333, 89, 284, 7, 31, "Input"],
+Cell[3620, 98, 295, 7, 31, "Input"],
+Cell[3918, 107, 231, 6, 31, "Input"],
+Cell[4152, 115, 236, 6, 31, "Input"],
+Cell[4391, 123, 240, 6, 31, "Input"],
+Cell[4634, 131, 380, 9, 52, "Input"],
+Cell[5017, 142, 398, 8, 31, "Input"],
+Cell[5418, 152, 511, 10, 72, "Input"],
+Cell[5932, 164, 150, 2, 72, "Input"],
+Cell[6085, 168, 1444, 25, 72, "Input"],
+Cell[7532, 195, 146, 2, 72, "Input"],
+Cell[7681, 199, 1093, 21, 72, "Input"],
 Cell[CellGroupData[{
-Cell[17896, 438, 634, 15, 72, "Input"],
-Cell[18533, 455, 618, 11, 31, "Output"],
-Cell[19154, 468, 616, 11, 31, "Output"],
-Cell[19773, 481, 614, 11, 31, "Output"]
+Cell[8799, 224, 95, 1, 31, "Input"],
+Cell[8897, 227, 1405, 29, 55, "Output"]
 }, Open  ]],
+Cell[10317, 259, 89, 1, 52, "Input"],
+Cell[10409, 262, 1613, 28, 72, "Input"],
 Cell[CellGroupData[{
-Cell[20424, 497, 116, 1, 31, "Input"],
-Cell[20543, 500, 247, 5, 31, "Output"]
+Cell[12047, 294, 96, 1, 31, "Input"],
+Cell[12146, 297, 1130, 23, 52, "Output"]
 }, Open  ]],
-Cell[20805, 508, 174, 3, 92, "Input"],
-Cell[20982, 513, 166, 2, 31, "Input"],
-Cell[21151, 517, 2110, 45, 232, "Input"],
-Cell[23264, 564, 2252, 52, 312, "Input"],
+Cell[13291, 323, 226, 3, 72, "Input"],
+Cell[13520, 328, 1721, 30, 72, "Input"],
 Cell[CellGroupData[{
-Cell[25541, 620, 198, 3, 31, "Input"],
-Cell[25742, 625, 12581, 324, 461, "Output"]
+Cell[15266, 362, 105, 1, 31, "Input"],
+Cell[15374, 365, 1495, 29, 52, "Output"]
 }, Open  ]],
-Cell[38338, 952, 89, 1, 52, "Input"],
-Cell[38430, 955, 144, 2, 31, "Input"]
+Cell[16884, 397, 93, 1, 31, "Input"],
+Cell[16980, 400, 1039, 23, 112, "Input"],
+Cell[CellGroupData[{
+Cell[18044, 427, 36, 0, 31, "Input"],
+Cell[18083, 429, 1219, 25, 52, "Output"]
+}, Open  ]],
+Cell[19317, 457, 146, 2, 72, "Input"],
+Cell[19466, 461, 252, 4, 92, "Input"],
+Cell[19721, 467, 1268, 34, 121, "Input"],
+Cell[20992, 503, 1991, 47, 192, "Input"],
+Cell[22986, 552, 146, 2, 72, "Input"],
+Cell[23135, 556, 2529, 58, 252, "Input"],
+Cell[25667, 616, 148, 2, 72, "Input"],
+Cell[25818, 620, 1184, 29, 212, "Input"],
+Cell[27005, 651, 174, 3, 92, "Input"],
+Cell[27182, 656, 166, 2, 31, "Input"],
+Cell[27351, 660, 2303, 47, 232, "Input"],
+Cell[29657, 709, 2851, 65, 352, "Input"],
+Cell[CellGroupData[{
+Cell[32533, 778, 198, 3, 31, "Input"],
+Cell[32734, 783, 20264, 515, 770, "Output"]
+}, Open  ]],
+Cell[53013, 1301, 89, 1, 52, "Input"],
+Cell[53105, 1304, 144, 2, 88, "Input"]
 }
 ]
 *)
