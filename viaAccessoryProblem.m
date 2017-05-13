@@ -10,6 +10,9 @@ Begin["Private`"]
 
 viaAccessoryProblem[t_,\[Tau]_,t0_,u0_,A_,eps_]:= ( 
 	tt0=t0;uu0=u0;\[Tau]\[Tau]0 = \[Tau];
+    steps = {};
+	counterRecount = -1;
+	recountNumberRecount = 0;
 	mu=getDelta2[A,u0,1]/getDelta2[A,u0,0];
 	While[
 		tt0 < t
@@ -18,18 +21,23 @@ viaAccessoryProblem[t_,\[Tau]_,t0_,u0_,A_,eps_]:= (
 		uu0 = getNextY2[uu0,\[Tau]\[Tau]0,A,mu];
 		mu = getMu2[A,uu0,\[Tau]\[Tau]0,mu];
         tt0 = tt0 + \[Tau]\[Tau]0;
+        steps = Append[steps, \[Tau]\[Tau]0];
+        recountNumberRecount += recountNumber;
+		counterRecount++;
 	];
 Return[uu0])
 
 goodStep2[eps_,\[Tau]\[Tau]0_,prevY_,A_,mu_] := ( 
 	\[Tau]\[Tau]\[Tau]0= \[Tau]\[Tau]0;
+    recountNumber = 0;
 	While[
     first = getNextY2[prevY,\[Tau]\[Tau]\[Tau]0,A,mu];
     halfSecond = getNextY2[prevY,\[Tau]\[Tau]\[Tau]0/2,A,mu];
     second = getNextY2[halfSecond,\[Tau]\[Tau]\[Tau]0/2,A,getMu2[A,halfSecond,\[Tau]\[Tau]\[Tau]0/2,mu]];
 
 	Max[Abs[first - second]] > eps
-	, \[Tau]\[Tau]\[Tau]0 = \[Tau]\[Tau]\[Tau]0/2
+	, recountNumber++;
+      \[Tau]\[Tau]\[Tau]0 = \[Tau]\[Tau]\[Tau]0/2
 	];
 Return[\[Tau]\[Tau]\[Tau]0])
 
@@ -51,7 +59,19 @@ getDelta2[A_,y_,k_] := (
   Return[result]
 )
 
-
+viaAccessoryProblemStatistics[t_,\[Tau]_,t0_,u0_,A_,eps_, exactAnswer_]  := ( 
+	currentAnswer = viaAccessoryProblem[t,\[Tau],t0,u0,A,eps];
+Return[
+	<|
+		"Discrepancy" -> Abs[exactAnswer - currentAnswer], 
+		"Name" -> "viaAccessoryProblem", 
+		"Result" -> uu0,
+		"MaxStep" -> Max[steps],
+		"MinStep" -> Min[steps],
+		"Step counts" -> counterRecount,
+		"Recounts number" -> recountNumberRecount
+	|>
+]);
 
 
 
