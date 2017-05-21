@@ -4,6 +4,7 @@ BeginPackage["euler`"]
 
 yEuler::usage = "return result with euler method"
 yEulerStatistics::usage = "statistics for euler"
+getTime1::usage = "get time"
 
 Begin["Private`"]
 
@@ -22,8 +23,15 @@ yEulerStatistics[t_,\[Tau]_,t0_,u0_,A_, exactAnswer_] := <|
 	"Result" -> yEuler[t,\[Tau],t0,u0,A],
 	"MaxStep" -> \[Tau],
 	"MinStep" -> \[Tau],
-	"Step counts" -> counter
+	"Step counts" -> counter,
+    "Time" -> getTime1[t,\[Tau],t0,u0,A]
 |>
+
+getTime1[t_,\[Tau]_,t0_,u0_,A_] := (
+	startT=AbsoluteTime[];
+    yEuler[t,\[Tau],t0,u0,A];
+	AbsoluteTime[]-startT
+);
 
 
 End[]

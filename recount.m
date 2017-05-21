@@ -31,6 +31,7 @@ Return[\[Tau]\[Tau]\[Tau]0]);
 diff[f_,\[Tau]_,t0_,u0_,A_] := Max[Abs[f[\[Tau] + t0,\[Tau],t0,u0,A]-f[\[Tau]+ t0,\[Tau]/2,t0,u0,A]]];
 
 solveWithRecountStatistics[f_,eps_,t_,\[Tau]0_,t0_,u0_,A_, exactAnswer_]  := ( 
+    startT=AbsoluteTime[];
 	tt0=t0;uu0=u0;\[Tau]\[Tau]0 = \[Tau]0;steps = {};
 	counterRecount = -1;
 	recountNumberRecount = 0;
@@ -51,7 +52,8 @@ Return[
 		"MaxStep" -> Max[steps],
 		"MinStep" -> Min[steps],
 		"Step counts" -> counterRecount,
-		"Recounts number" -> recountNumberRecount
+		"Recounts number" -> recountNumberRecount,
+        "Time" -> AbsoluteTime[]-startT
 	|>
 ]);
 

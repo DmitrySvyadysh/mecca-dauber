@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     79203,       1743]
-NotebookOptionsPosition[     76795,       1669]
-NotebookOutlinePosition[     77168,       1685]
-CellTagsIndexPosition[     77125,       1682]
+NotebookDataLength[     79599,       1750]
+NotebookOptionsPosition[     77190,       1676]
+NotebookOutlinePosition[     77563,       1692]
+CellTagsIndexPosition[     77520,       1689]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -945,8 +945,8 @@ Cell[BoxData[{
     RowBox[{
     "\"\<Name\>\"", ",", " ", "\"\<Result\>\"", ",", " ", "\"\<MaxStep\>\"", 
      ",", " ", "\"\<MinStep\>\"", ",", " ", "\"\<Discrepancy\>\"", ",", 
-     "\"\<Step counts\>\"", ",", " ", "\"\<Recounts number\>\""}], "}"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+     "\"\<Step counts\>\"", ",", " ", "\"\<Recounts number\>\"", ",", " ", 
+     "\"\<Time\>\""}], "}"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"statisticsTable", " ", "=", " ", 
    RowBox[{"{", "titles", "}"}]}], ";"}], "\[IndentingNewLine]", 
@@ -985,7 +985,8 @@ Cell[BoxData[{
    3.6717366561216636`*^9}, 3.671736705443951*^9, 3.6717367414715414`*^9, {
    3.6717367778511796`*^9, 3.6717368177662687`*^9}, 3.6717369797609167`*^9, 
    3.671737121562994*^9, {3.672331716985632*^9, 3.6723317433889637`*^9}, {
-   3.672331777228244*^9, 3.672331786357398*^9}, 3.6723318345934925`*^9}],
+   3.672331777228244*^9, 3.672331786357398*^9}, 3.6723318345934925`*^9, {
+   3.7043867644903746`*^9, 3.7043867688724866`*^9}}],
 
 Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", 
@@ -1043,6 +1044,12 @@ Cell[BoxData[
             RowBox[{
             "associations", "\[LeftDoubleBracket]", "i", 
              "\[RightDoubleBracket]"}], ",", "\"\<Recounts number\>\"", ",", 
+            "\"\<NO\>\""}], "]"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"Lookup", "[", 
+           RowBox[{
+            RowBox[{
+            "associations", "\[LeftDoubleBracket]", "i", 
+             "\[RightDoubleBracket]"}], ",", "\"\<Time\>\"", ",", 
             "\"\<NO\>\""}], "]"}]}], "\[IndentingNewLine]", "}"}]}], 
        "\[IndentingNewLine]", "\[IndentingNewLine]", "]"}], 
       "\[IndentingNewLine]", ",", 
@@ -1052,7 +1059,7 @@ Cell[BoxData[
      "\[IndentingNewLine]", "]"}], ";"}]}]}]], "Input",
  CellChangeTimes->{{3.671736981886188*^9, 3.6717370043820577`*^9}, {
   3.6717371149031453`*^9, 3.6717372738474045`*^9}, {3.6723318553831205`*^9, 
-  3.6723318858379707`*^9}}],
+  3.6723318858379707`*^9}, {3.7043867776152864`*^9, 3.704386793082922*^9}}],
 
 Cell[CellGroupData[{
 
@@ -1737,14 +1744,14 @@ Cell[44434, 885, 271, 7, 42, "Input"],
 Cell[44708, 894, 1418, 34, 340, "Input"],
 Cell[46129, 930, 200, 4, 124, "Input"],
 Cell[46332, 936, 166, 2, 42, "Input"],
-Cell[46501, 940, 2303, 47, 313, "Input"],
-Cell[48807, 989, 2851, 65, 475, "Input"],
+Cell[46501, 940, 2386, 48, 313, "Input"],
+Cell[48890, 990, 3163, 71, 502, "Input"],
 Cell[CellGroupData[{
-Cell[51683, 1058, 198, 3, 42, "Input"],
-Cell[51884, 1063, 24656, 596, 1085, "Output"]
+Cell[52078, 1065, 198, 3, 42, "Input"],
+Cell[52279, 1070, 24656, 596, 1066, "Output"]
 }, Open  ]],
-Cell[76555, 1662, 89, 1, 70, "Input"],
-Cell[76647, 1665, 144, 2, 99, "Input"]
+Cell[76950, 1669, 89, 1, 98, "Input"],
+Cell[77042, 1672, 144, 2, 138, "Input"]
 }
 ]
 *)
