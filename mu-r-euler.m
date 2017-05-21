@@ -5,6 +5,7 @@ BeginPackage["REuler`"]
 yMuREuler::usage = "return with yMuREuler"
 yMuREulerStatistics::usage = "statistics for yMuREuler"
 muREulerWithDeclaredR::usage = "yMuREuler With Declared R"
+getTime3::usage = "get time"
 
 Begin["Private`"]
 
@@ -32,8 +33,15 @@ yMuREulerStatistics[t_,\[Tau]_,t0_,u0_,A_,R_, exactAnswer_] := <|
 	"Result" -> yMuREuler[t,\[Tau],t0,u0,A,R],
 	"MaxStep" -> \[Tau],
 	"MinStep" -> \[Tau],
-	"Step counts" -> counter
+    "Step counts" -> counter,
+	"Time" -> getTime3[t,\[Tau],t0,u0,A,R]
 |>
+
+getTime3[t_,\[Tau]_,t0_,u0_,A_,R_] := (
+	startT=AbsoluteTime[];
+    yMuREuler[t,\[Tau],t0,u0,A,R];
+	AbsoluteTime[]-startT
+);
 
 End[]
 
