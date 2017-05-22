@@ -60,6 +60,7 @@ getDelta2[A_,y_,k_] := (
 )
 
 viaAccessoryProblemStatistics[t_,\[Tau]_,t0_,u0_,A_,eps_, exactAnswer_]  := ( 
+startT=AbsoluteTime[];
 	currentAnswer = viaAccessoryProblem[t,\[Tau],t0,u0,A,eps];
 Return[
 	<|
@@ -69,10 +70,10 @@ Return[
 		"MaxStep" -> Max[steps],
 		"MinStep" -> Min[steps],
 		"Step counts" -> counterRecount,
-		"Recounts number" -> recountNumberRecount
+		"Recounts number" -> recountNumberRecount,
+        "Time" -> AbsoluteTime[]-startT
 	|>
 ]);
-
 
 
 End[]
